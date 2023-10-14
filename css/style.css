@@ -1,0 +1,60 @@
+/* CSS - PSEUDO KLASE/PSEUDE ELEMENTI */
+p
+{
+    color: #0fc588;
+}
+
+/* PSEUDO KLASE */
+a:link /* kada link nije posecen */
+{
+    color: red;
+}
+
+a:visited /* kaad je link posecen */
+{
+    color: yellow;
+    font-weight: bold;
+}
+
+.dugme:hover /*kada misem predjete preko elemenata*/ 
+{
+    background-color: bisque;
+}
+
+p:active 
+{
+    background-color: rgb(174, 197, 216);
+}
+
+/* PSEUDO ELEMENTE */
+p::before /* ::after */
+{
+    content: "SLEDI PARAGRAF ->";
+}
+
+/* RESPONZIVNOST - prilagodjen razliticitim vrstama ekrana*/
+/* min-width, max-height, min-height */
+
+@media (max-width: 800px) and (min-width: 500px) /* 500 - 800px*/
+{
+    p {
+        background-color: blueviolet;
+    }
+
+    /* a {
+        
+    } */
+}
+
+/* @media (400px <= width <= 1000px) 
+{
+
+} */
+
+/* print, all */
+/* @media all and (max-width) {
+    
+} */
+
+
+
